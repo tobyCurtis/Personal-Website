@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>Toby Curtis | Developer</title>
+        <!-- <link rel="icon" type="image/png" href=""> -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+        <!-- endbower -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- endinject -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+
+    <body ng-controller="PageController as vm">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top topnav panel" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" ng-click="vm.scrollTop()">toby@tobycurtis.tech</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a ng-click="vm.scroll('about')" id="aboutButton">About</a>
+                        </li>
+                        <li>
+                            <a ng-click="vm.scroll('resume')" id="resumeButton">Resume</a>
+                        </li>
+                        <li>
+                            <a  ng-click="vm.scroll('contact')" id="contactButton">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Header -->
+        <div class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Toby Curtis</h1>
+                            <h3>Developer</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a ng-click="vm.test($event)" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/tobycurtis" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://portfolium.com/tobycurtis" class="btn btn-default btn-lg"><img src="img/portfolium.png" /> &nbsp;<span class="network-name">Portfolium</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.intro-header -->
+        <!-- Page Content -->
+        <!--         <a id="about"></a> -->
+        <div class="content-section-b" id="about">
+            <div class="container text-center">
+                <div class="row">
+                    <h1>About</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Enthusiastic</h2>
+                        <p class="lead">Self starting developer with a passion for creating beautiful code. Excited about new Technologies and a lust for learning.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Test Driven Developer</h2>
+                        <p class="lead">Ardent about writing scalable and maintainable code. I believe in executing a Test Driven Development Cycle to write code that's not only clean but also easy to work with.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">I Love APIs</h2>
+                        <p class="lead">APIs are truly amazing. They put a wealth of information at your fingertips and transform the possibilities of creatable apps.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-section-a -->
+        <div class="content-section-a">
+            <div class="container">
+                <h1 class="text-center">My Languages</h1> HTML / CSS
+                <uib-progressbar class="progress-striped active" max="200" value="180" type="info"></uib-progressbar>
+                Bootstrap
+                <uib-progressbar class="progress-striped active" max="200" value="185" type="info"></uib-progressbar>
+                JavaScript
+                <uib-progressbar class="progress-striped active" max="200" value="150" type="info"></uib-progressbar>
+                AngularJS
+                <uib-progressbar class="progress-striped active" max="200" value="185" type="info"></uib-progressbar>
+                C# / .NET
+                <uib-progressbar class="progress-striped active" max="200" value="160" type="info"></uib-progressbar>
+                SQL
+                <uib-progressbar class="progress-striped active" max="200" value="180" type="info"></uib-progressbar>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <h1 class="text-center">My Technologies</h1>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6 asp">
+                    <img src="img/asp.svg" class="logo">
+                    <p class="logoText lead">ASP.NET Web API</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/angularjs.svg" class="logo">
+                    <p class="logoText lead">AngularJS</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/bootstrap.svg" class="logo">
+                    <p class="logoText lead">Bootstrap</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/bower.svg" class="logo">
+                    <p class="logoText lead">Bower</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/csharp.svg" class="logo">
+                    <p class="logoText lead">C#</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/css3.svg" class="logo">
+                    <p class="logoText lead">CSS3</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/git.svg" class="logo">
+                    <p class="logoText lead">Git</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/gulp.svg" class="logo">
+                    <p class="logoText lead">Gulp</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/html5.svg" class="logo">
+                    <p class="logoText lead">HTML5</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/javascript.svg" class="logo">
+                    <p class="logoText lead">JavaScript</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/jQuery.svg" class="logo">
+                    <p class="logoText lead">jQuery</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/nodejs.svg" class="logo">
+                    <p class="logoText lead">Node.js</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/sql.png" class="logo">
+                    <p class="logoText lead">Microsoft SQL Server</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/trello.svg" class="logo">
+                    <p class="logoText lead">Trello</p>
+                </div>
+                <div class="logoBlock col-lg-3 col-md-4 col-sm-6">
+                    <img src="img/visualstudio.svg" class="logo">
+                    <p class="logoText lead">Visual Studio</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-a" id="resume">
+            <div class="container">
+                <div class="row text-center">
+                    <h1>Resume</h1>
+                </div>
+                <div class="row">
+                    <div class="wrapper" ng-controller="DocumentController">
+                        <ng-pdf template-url="partials/viewer.html" scale="page-fit"></ng-pdf>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="contact">
+            <div class="container">
+                <div class="row techContain">
+                    <div class="col-lg-6 bannerTitle">
+                        <h2 id="out">Lets get started</h2>
+                    </div>
+                    <div class="col-lg-6 bannerButtons">
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://linkedin.com/in/tobycurtis" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tobycurtis" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://portfolium.com/tobycurtis" class="btn btn-default btn-lg"><img src="img/portfolium.png" /> &nbsp; <span class="network-name">Portfolium</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.banner -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a ng-click="vm.scrollTop()">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a ng-click="vm.scroll('about')">About</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a ng-click="vm.scroll('resume')">Resume</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="mailto:toby@tobycurtis.tech" ng-click="vm.switchEmail($event)">{{vm.emailMe}}</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Toby Curtis 2016. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/pdfjs-dist/build/pdf.js"></script>
+        <script src="bower_components/pdfjs-dist/build/pdf.worker.js"></script>
+        <script src="bower_components/angular-pdf/dist/angular-pdf.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+        <!-- endbower -->
+        <!-- inject:js -->
+        <script src="app.js"></script>
+        <script src="document.controller.js"></script>
+        <script src="page.controller.js"></script>
+        <!-- endinject -->
+        </div>
+    </body>
+
+</html>

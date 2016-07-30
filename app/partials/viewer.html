@@ -1,0 +1,16 @@
+<nav ng-class="getNavStyle(scroll)" class="pdfNav">
+    <div id="viewerTop">
+        <button ng-click="zoomIn()" class="pdfButtons btn btn-default btn-lg"><span class="fa fa-search-plus"></span>
+        </button>
+        <button ng-click="fit($event)" class="pdfButtons btn btn-default btn-lg">Fit to Window</span>
+        </button>
+        <button ng-click="zoomOut()" class="pdfButtons btn btn-default btn-lg"><span class="fa fa-search-minus"></span>
+        </button>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div id="viewerBottom">
+        <a class="btn btn-default btn-lg" ng-href="{{pdfUrl}}">Download</a>
+    </div>
+</nav>
+<hr> {{loading}}
+<canvas id="pdf-canvas"></canvas>
